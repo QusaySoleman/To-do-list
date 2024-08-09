@@ -1,0 +1,140 @@
+:root {
+    --main-font: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #eee; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    width: 60%;
+
+    border-radius: 15px;
+    background-color: #eee;
+    min-height: 350px;
+}
+
+/* Header Start */
+.header {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    padding: 5;
+    width: 100%;
+    font-size: 22px;
+    color: #000;
+    text-align: center;
+}
+
+.header h2 {
+    margin-right: 15px;
+}
+
+.header i {
+    font-size: 28px;
+
+}
+
+/* Header End */
+
+/* From Start */
+.container-fluid .form {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 15px 0;
+    position: relative;
+
+}
+
+.container-fluid .form input[type=text],
+.container-fluid .form input[type=button] {
+    font-size: 18px;
+    padding: 15px 10px;
+    border-radius: 15px;
+    outline: none;
+    font-family: var(--main-font);
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid black;
+
+}
+
+.container-fluid .form input[type=text] {
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid .form input[type=button] {
+    padding: 5px;
+    cursor: pointer;
+    min-width: 50px;
+    max-width: 200px;
+    color: #fff;
+    background-color: #000000d3;
+    transition: .3s all ease;
+    position: absolute;
+    right: 0px;
+    top: 17px;
+    height: 60%;
+    border: 0;
+}
+
+.container-fluid .form input[type=button]:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+/* From End */
+
+/* Content-box Start */
+.container-fluid .content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 15px;
+}
+
+.container-fluid .content-box i {
+    color: #000;
+    /* font-size: 18px; */
+}
+
+.container-fluid .content-box i.close {
+    /* font-size: 25px; */
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.container-fluid .content-box i.close:hover {
+    color: #fff;
+}
+
+/* Content-box End */
+
+/* Done Class */
+.done {
+    font-style: italic;
+    text-decoration: line-through;
+}
